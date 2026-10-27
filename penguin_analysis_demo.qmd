@@ -1,0 +1,29 @@
+---
+title: "penguin_analysis_demo"
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+```{r}
+```
+
+```{r}
+
+```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+penguins |> count(species)
+```
+
+# How many pengiuns in the dataset for each species
+
+Body mass by species
+
+```{r}
+penguins |> ggplot(mapping = aes(x = species, y = body_mass_g), fill = species) + geom_boxplot() + labs(title = "Penguin Body Mass by Species")
+
+```
