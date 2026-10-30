@@ -24,6 +24,6 @@ penguins |> count(species)
 Body mass by species
 
 ```{r}
-penguins |> ggplot(mapping = aes(x = species, y = body_mass_g), fill = species) + geom_boxplot() + labs(title = "Penguin Body Mass by Species")
+penguins |> ggplot(mapping = aes(x = species, y = body_mass_g, fill = species)) + geom_boxplot() + labs(title = "Penguin Body Mass by Species")
 
 ```
